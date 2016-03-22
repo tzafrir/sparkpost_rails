@@ -30,8 +30,8 @@ module SparkpostRails
             :name   => mail[:from].display_names.first,
             :email  => mail.from.first
           },
-          :subject  => mail.subject,
-          :reply_to => mail.reply_to.first
+          :subject  => mail.subject
+          # :reply_to => mail.reply_to.first
         }
       }
       if mail.multipart?
